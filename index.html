@@ -10,40 +10,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
+    <!-- Nav -->
+    <header class="">
 
-    <header class="w-[100%] h-[65px] ">
 
+        <nav class="w-[100%] h-[65px] lg:h-[135px] fixed bg-white top-[0px] shadow-2xs z-10">
 
-        <nav class="nav-1 flex mx-[16px] pt-[20px] justify-between">
-            <a href="index.html"><img src="img/chopee logo.PNG" alt="Logo Chopee" class="w-[125.58px] h-[25px]"> </a>
+            <div class="nav-1 flex mx-[16px]  justify-between lg:mx-[0px] h-auto">
+                <div class="pt-[20px] lg:pl-[32px] lg:h-[45px] flex">
+                    <a href="index.html"><img src="https://static.chope.co/static/mainwebsite5.0/img/Chope-with-Grab_Logo-Horizontal.png?date=20250617" alt="Logo Chopee" class="w-[125.58px] h-[25px] lg:h-[45px] lg:w-full"> </a>
 
-          <img src="img/arrow bottom.png" alt="arrow" class="w-[16px] h-[12px] absolute top-[25px] ml-[10px] left-[140px]">
+                    <img src="https://static.chope.co/static/mainwebsite5.0/img/Chevron-Down-Large.png?date=20250617" alt="arrow" class="w-[11px] h-[6px] lg:h-[12px] lg:w-[23px] self-center lg:relative lg:top-[10px] ml-[12px] lg:ml-[17px]">
+                </div>
+            
+            <!-- mobile saja (BUrger Menu) -->
+                <div class="menu-toggle pt-[20px] mt-[5px] lg:hidden">
+                    <!-- <input type="checkbox"> -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            <!-- dekstop -->
+                <div class="w-[200px] h-[64px] mr-[28px] mt-[16px] hidden lg:block">
+                    <a href="" class="flex bg-[#F8D047] justify-center rounded-md text-[12px] font-bold h-[48px] items-center"><img src="https://static.chope.co/static/mainwebsite5.0/img/login-pax.png?date=20250617" alt="" class="w-[18px] h-[18px]"> Sign Up or Login</a>
+                </div>
 
-            <div class="menu-toggle mr-[16px]">
-                <!-- <input type="checkbox"> -->
-                <span></span>
-                <span></span>
-                <span></span>
+            
             </div>
+            
+
+            <div class="hidden lg:block flex border-t border-[#efefef] opacity-[0.6]">
+                <ul class="flex pl-[32px] items-center h-[50px] text-[#221558] text-[15px]">
+                    <li class="px-[20px]">Restaurant Directory</li>
+                    <li class="px-[20px]">Exclusive Discounts <img src="https://static.chope.co/static/mainwebsite5.0/img/Chevron-Down-Large.png?date=20250617" alt="" class="inline w-[10px] h-[6px] ml-[7px]"></li>
+                    <li class="px-[20px]">Deals</li>
+                    <li class="px-[20px]">Guides</li>
+                    <li class="px-[20px]">Rewards</li>
+
+                <select name="Region" id="Region" class="inline border absolute right-[32px] pr-[30px] pl-[12px] leading-[32px] text-[12px] rounded-sm border-[#6c6f95] min-w-[112px] min-h-[32px] box-content text-[#6c7092]">
+                    <option value="Jakarta" class="text-[#6c7092]">Jakarta</option>
+                    <option value="Bali" class="text-[#6c7092]">Bali</option>
+                    <option value="Bangkok" class="text-[#6c7092]">Bangkok</option>
+                    <option value="Singapore" class="text-[#6c7092]">Singapore</option>
+                    <option value="Phuket" class="text-[#6c7092]">Phuket</option>
+                </select>
+                </ul>
+
+
+
+            </div>
+
+            
         </nav>
 
-        <nav class="nav-2">
-
-        </nav>
-        
 
     </header>
 
     <main>
-        
-        <section class="container-book mt-[2px]  w-[100%] h-[356px] py-[8px] mb-[16px] bg-[url(https://static.chope.co/static/mainwebsite5.0/img/home-beader-bg.png)] bg-cover ">
+        <!-- Kotak awal discover and book restaurants -->
 
-            <div class="w-[92%] h-[90%] m-[16px] bg-white rounded-lg">
+        <!-- mobile -->
+        <section class="h-auto container-book mt-[67px] w-[100%]  py-[8px] mb-[16px] bg-[url(https://static.chope.co/static/mainwebsite5.0/img/home-beader-bg.png)] bg-cover bg-center shrink-0 lg:hidden">
+
+
+            <div class=" m-[16px] bg-white rounded-lg min-h-[314px]">
                 <h1 class="mx-[16px] pt-[16px] font-bold text-[20px] mb-[8px]">Discover and book restaurants</h1>
 
                 <div class="mx-[16px]">
-                     <input type="search" name="Discover" id="discover" class="bg-[#F7F8FA] w-[100%] h-[60px] rounded-lg p-[10px]" placeholder=" Search">
+                     <input type="search" name="Discover" id="discover" class="bg-[#F7F8FA] w-[100%] h-[60px] rounded-lg p-[10px]" placeholder="Discover your next happy place">
                 </div>
                 <div class="mx-[16px]">
                      <input type="search" name="Discover" id="discover" class="bg-[#F7F8FA]  w-[100%] h-[60px] mt-[4px] rounded-lg p-[10px]" placeholder="Guests">
@@ -54,291 +90,613 @@
                     <div><input type="search" class="w-[100%] h-[60px] bg-[#F7F8FA] rounded-lg p-[10px]" placeholder="Time"></div>
                 </div>
 
-                <div class="flex font-bold bg-[#FFCF01] m-[16px] h-[40px] justify-center items-center rounded-full gap-[5px]"> 
-                    <img src="img/search logo.png" alt="" class="w-[15px] h-[15px]">
+                <div class="flex font-bold bg-[#FFCF01] m-[16px] h-[40px] justify-center items-center rounded-full gap-[5px] text-[14px]"> 
+                    <img src="img/search.png" alt="" class="w-[15px] h-[15px]">
                     Let's Go 
                 </div>
                 
 
             </div>
-             
-
+            
         </section>
 
-        <section id="discover-container" class="ml-[24px] mt-[42px] h-[395.391px] bg-[#efefef]">
-            <h1 class="text-[#10024A] font-bold text-[24px] mb-[4px]">Discover restaurants</h1>
-            <p class="text-[12px] font-normal text-[#6c6f95] pb-[20px]">Seasonal campaigns and trending restaurants!</p>
+        <!-- laptop -->
+        <section class="bg-[url(https://static.chope.co/static/mainwebsite5.0/img/home-beader-bg.png)] w-full  hidden lg:block mt-[135px] pb-[8px] mb-[16px]">
+            <div class="pt-[40px] mx-[80px] min-h-[200px] ">
+                <h1 class="leading-[40px] text-[32px] font-bold">Discover and book restaurants</h1>
+                
+                <div class="bg-white rounded-full h-[64px] mt-[24px] flex items-center justify-evenly">
 
-            <div class=" h-[265px] bg-white flex gap-[24px] overflow-scroll w-[100%]">
-                <div class="item w-[224px] h-[257px]">
-                    <img src="img/d1.png" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Exclusive Offers</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Enjoy these exclusive offers when you book through the chope website</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="img/d2.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Jakarta's Best Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Instagrammable-1730689000.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Jakarta's Best Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Newest-Deals-1730688979.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Jakarta's Best Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_New-Reservations-1730689029.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Jakarta's Best Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Weekend-Brunch-1730689051.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Jakarta's Best Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Rewards-1730689103.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Jakarta's Best Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
+                    <div class="pl-[32px] w-[848px]"><input type="search" name="" id="" placeholder="Discover your next happy place" class="w-full py-[10px]"></div>
+                    <span class="w-[2px] h-full bg-[#efefef]"></span>
+                    <div class="min-w-[162px]"><input type="search" name="" id="" placeholder="Guests" class="pl-[16px] py-[10px]"></div>
+                    <span class="w-[2px] h-full bg-[#efefef]"></span>
+                    <div class="min-w-[162px]"><input type="search" name="" id="" placeholder="Date" class="pl-[16px] py-[10px]"></div>
+                    <span class="w-[2px] h-full bg-[#efefef]"></span>
+                    <div class="min-w-[162px]"><input type="search" name="" id="" placeholder="Time" class="pl-[16px] py-[10px]"></div>
+                    <span class="w-[2px] h-full bg-[#efefef]"></span>
+                    <div class="bg-[#FFCF01] rounded-full h-[40px] mr-[16px] ml-[8px] p-[8px] flex items-center font-bold text-[14px] cursor-pointer"><img src="img/search.png" alt="" class="w-[20px] h-[20px]"> <span class="ml-[4px] text-nowrap ">Lets Go</span></div>
+
                 </div>
 
+            </div>
+        </section>
+        <!-- akhir -->
+
+
+        <!-- isinya bagian putih -->
+        <!-- Discover Restaurants -->
+        <section id="discover-container" class="pl-[24px] lg:pl-[80px] pt-[42px] min-h-[411.391px lg:min-h-[527.594px] m-[0px] box-content">
+            <h1 class="text-[#10024A] font-bold text-[24px] lg:text-[36px] mb-[4px]">Discover restaurants</h1>
+            <div class="absolute right-[54px] hidden lg:block">
+                <span class="text-[24px]"><</span> 
+                <span class="text-[24px] ml-[10px]">></span>
+            </div>
+            <div class="flex gap-[7px]">
+                <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] pb-[20px]">Seasonal campaigns and trending restaurants!</p>
+                <a href="###" class="text-[#4D4DD0] font-bold text-[16px] hidden lg:block">See More ></a>
+            </div>
+            <!-- item -->
+            <div class=" h-[281px] lg:h-auto flex overflow-x-scroll w-[100%]">
+                <div class="item w-[224px] min-h-[257px] lg:w-[412px] lg:h-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x308x80xw_opt-1-web-tiles-1750223580.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Discover Grab Dine Out Deals</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Save up to 50% OFF your bill at more than 1,000 restaurants</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2023/09/s-412x308x80xw_1693559466_28680.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Exclusive Offers</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Enjoy these exclusive offers when you book through the Chope website or app!</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x308x80xw_web-tiles-1750226018.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">BEST TABLE FROM BOGA</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Bakerzin, Paradise Dynasty, Yakiniku Like and more</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Top-100-1730688938.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Jakarta's Best Restaurants</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">The top 100 restaurants on Chope</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Instagrammable-1730689000.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Instagramable Spot</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Where every dish is picture perfect 📸</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Newest-Deals-1730688979.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Dining Vouchers</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Get amazing deals at restaurants and cafes!</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_New-Reservations-1730689029.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">New on Reservations</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Discover culinary delights at our newly listed restaurants!</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Weekend-Brunch-1730689051.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Weekend Brunch Guide</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Try out some of these top weekend brunch spots!</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Rewards-1730689103.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Grab a friend and unlock rewards!</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">300 Chope-Dollars are waiting for you</p>
+                </div>
+                
 
             </div>
 
-            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px]">
-                <h1 class=>See more</h1>
+            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px] mr-[24px] lg:hidden">
+                <h1 class="font-bold">See more</h1>
             </div>
             
         </section>
 
-        <section id="recommend-container" class="ml-[24px] mt-[42px] h-[411.391px] bg-[#efefef]">
-            <h1 class="text-[#10024A] font-bold text-[24px] mb-[4px]">Highly Recommended</h1>
-            <p class="text-[12px] font-normal text-[#6c6f95] pb-[20px]">Curated restaurants for you to try!</p>
+        <!-- Highly Recommended -->
+        <section id="recommend-container" class="pl-[24px] lg:pl-[80px] pt-[42px] min-h-[411.391px] lg:min-h-[546.594px] m-[0px] box-content">
+            <h1 class="text-[#10024A] font-bold text-[24px] lg:text-[36px] mb-[4px]">Highly Recommended</h1>
+            <div class="absolute right-[54px] hidden lg:block">
+                <span class="text-[24px]"><</span> 
+                <span class="text-[24px] ml-[10px]">></span>
+            </div>
+            <div class="flex gap-[7px]">
+                <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] pb-[20px]">Curated restaurants for you to try!</p>
+                <a href="###" class="text-[#4D4DD0] font-bold text-[16px] hidden lg:block">See More ></a>
+            </div>
 
-            <div class=" h-[280px] bg-white flex gap-[24px] overflow-scroll w-[100%] mb-[5px]">
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/11/s-412x304x80xw_Final-New-Weekend-Brunch-4-1731378949.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">PA.SO.LA Restaurant (The <br> Ritz-Carlton Jakarta, Pacific Place)</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (142 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Buy 2 Get 3: The Mediterranean Brunch</p>
+            <div class=" h-[290px] lg:h-auto bg-white overflow-x-scroll flex w-[100%] mb-[5px]">
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/05/s-412x304x80xw_Ambiance-1-1748257276.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">The J.J.A ( The St. Regis Jakarta)</h1>
+                    <p class="text-[14px] lg:text-[16px] text-[#6c6f95]">Offers exquisite Asian-inspired cuisine</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/05/s-412x304x80xw_1717037587_85277.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">Arts Café by Raffles Jakarta</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐</span>4.8 (152 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Exclusive offer 30% OFF on Buffet!</p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2023/11/s-412x304x80xw_1700445291_15052.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Chloe's Bistro & Bar</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.4 (10 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">A classic French brasserie and steakhouse</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/07/s-412x304x80xw_1721719676_23785.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px]">Plan B - Spanish Resto (Permata Senayan)</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (146 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] truncate">An authentic taste of Spain with Tapas and </p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2024/11/s-412x304x80xw_Final-New-Weekend-Brunch-4-1731378949.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">PA.SO.LA Restaurant (The Ritz-Carlton Jakarta, Pacific Place)</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (143 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">Buy 2 Get 3: The Mediterranean Brunch</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2022/12/s-412x304x80xw_1671104062_10005.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">Twelve Chinese Dining</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (73 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Indulge in an artful culinary journey</p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2024/05/s-412x304x80xw_1717037587_85277.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Arts Café by Raffles Jakarta</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.7 (152 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">Exclusive offer 30% OFF on Buffet!</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/06/s-412x304x80xw_1719400136_17857.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">Sugar & Spice (InterContinental <br> Jakarta Pondok Indah)</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (160 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] truncate">Enjoy a free buffet for every group of 2 diner</p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2024/07/s-412x304x80xw_1721719676_23785.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Plan B - Spanish Resto (Permata Senayan)</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (146 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">An authentic taste of Spain with Tapas and Sangria</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2023/06/s-412x304x80xw_1685958506_43355.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">Sailendra (JW Marriott Hotel Jakarta)</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (453 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Enjoy Buy 1 Dine 2 Lunch/Dinner Buffet</p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2022/12/s-412x304x80xw_1671104062_10005.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Twelve Chinese Dining</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.6 (74 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">Indulge in an artful culinary journey</p>
                 </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2024/06/s-412x304x80xw_1719400136_17857.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Sugar & Spice (InterContinental Jakarta Pondok Indah)</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (162 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">Enjoy a free buffet for every group of 2 diners!</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2023/06/s-412x304x80xw_1685958506_43355.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Sailendra (JW Marriott Hotel Jakarta)</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.5 (453 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">Enjoy Buy 1 Dine 2 Lunch/Dinner Buffet</p>
+                </div>
+
+
                 
 
 
             </div>
 
-            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px]">
-                <h1 class=>See more</h1>
+            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px] lg:hidden">
+                <h1 class="font-bold">See more</h1>
             </div>
             
         </section>
 
-        <section id="hot-dining-container" class="ml-[24px] mt-[42px] h-[411.391px] bg-[#efefef]">
-            <h1 class="text-[#10024A] font-bold text-[24px] mb-[4px]">Hot Dining Spots</h1>
-            <p class="text-[12px] font-normal text-[#6c6f95] pb-[20px]">Restaurants people are talking about</p>
+        <!-- Hot Dining Spots -->
+        <section id="recommend-container" class="pl-[24px] lg:pl-[80px] pt-[42px] min-h-[411.391px] lg:min-h-[546.594px] m-[0px] box-content">
+            <h1 class="text-[#10024A] font-bold text-[24px] lg:text-[36px] mb-[4px]">Hot Dining Spots</h1>
+            <div class="absolute right-[54px] hidden lg:block">
+                <span class="text-[24px]"><</span> 
+                <span class="text-[24px] ml-[10px]">></span>
+            </div>
+            <div class="flex gap-[7px]">
+                <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] pb-[20px]">Restaurants people are talking about</p>
+                <a href="###" class="text-[#4D4DD0] font-bold text-[16px] hidden lg:block">See More ></a>
+            </div>
 
-            <div class=" h-[280px] bg-white flex gap-[24px] overflow-scroll w-[100%] mb-[5px]">
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2023/08/s-412x304x80xw_1693283369_18920.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">Okuzono Japanese Dining</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.9 (126 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] truncate">An authentic izakaya concept at Senopati</p>
+            <div class=" h-[290px] lg:h-auto bg-white overflow-x-scroll flex w-[100%] mb-[5px]">
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2023/08/s-412x304x80xw_1693283369_18920.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Okuzono Japanese Dining</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span> 4.9 (127 Reviews)</p>
+                    <p class="text-[14px] lg:text-[16px] text-[#6c6f95]">An authentic izakaya concept at Senopati</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2025/04/s-412x304x80xw_Untitled-design-19-1744275617.png" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">Asia Restaurant (The Ritz-<br>Carlton Jakarta, Mega Kuningan)</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐</span>4.7 (494 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] truncate">All-you-can-eat buffet with an open kitchen</p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/04/s-412x304x80xw_Untitled-design-19-1744275617.png" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Asia Restaurant (The Ritz-Carlton Jakarta, Mega Kuningan)</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.47 (495 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">All-you-can-eat buffet with an open kitchen</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2023/11/s-412x304x80xw_1698889295_40383.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px]">Plan B - Spanish Resto (Permata Senayan)</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (146 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] truncate">An authentic taste of Spain with Tapas and </p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2023/11/s-412x304x80xw_1698889295_40383.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">PA.SO.LA Restaurant (The Ritz-Carlton Jakarta, Pacific Place)</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (143 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">Buy 2 Get 3: The Mediterranean Brunch</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2023/05/s-412x304x80xw_1684991569_45208.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">Twelve Chinese Dining</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (73 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Indulge in an artful culinary journey</p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2023/05/s-412x304x80xw_1684991569_45208.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Soichiro Irori Style Japanese Steakhouse</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (38 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">Savor the richness if perfection</p>
                 </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/12/s-412x304x80xw_Final-Ambience-6-1734661422.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-[224px] h-auto font-bold pt-[8px] truncate">Sugar & Spice (InterContinental <br> Jakarta Pondok Indah)</h1>
-                    <p class="text-[14px]"><span class="star">⭐⭐⭐⭐⭐</span>4.8 (160 Reviews)</p>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] truncate">Enjoy a free buffet for every group of 2 diner</p>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2024/12/s-412x304x80xw_Final-Ambience-6-1734661422.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Chanba Private Room Grill (Puri)</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>4.7 (7 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px]">All-in-one private grill</p>
+                </div>
+
+
+            </div>
+
+            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px] lg:hidden">
+                <h1 class="font-bold">See more</h1>
+            </div>
+            
+        </section>
+
+        <!-- New on Chope -->
+        <section id="recommend-container" class="pl-[24px] lg:pl-[80px] pt-[42px] min-h-[411.391px] lg:min-h-[546.594px] m-[0px] box-content">
+            <h1 class="text-[#10024A] font-bold text-[24px] lg:text-[36px] mb-[4px]">New on Chope</h1>
+            <div class="absolute right-[54px] hidden lg:block">
+                <span class="text-[24px]"><</span> 
+                <span class="text-[24px] ml-[10px]">></span>
+            </div>
+            <div class="flex gap-[7px]">
+                <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] pb-[20px]">Newly-listed restaurants you don't want to miss</p>
+                <a href="###" class="text-[#4D4DD0] font-bold text-[16px] hidden lg:block">See More ></a>
+            </div>
+
+            <div class=" h-[290px] lg:h-auto bg-white overflow-x-scroll flex w-[100%] mb-[5px]">
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_Tokku-Teppanyaki-Web-NOC-1750137025.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Toku Teppanyaki</h1>
+                    <p class="text-[14px] lg:text-[16px] text-[#6c6f95] truncate">Toku Teppanyaki: A contemporary Japanese teppanyaki restaurant where tradition meets innovation, delivering an unforgettable multi-sensory dining experience.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_San-Marco-Web-NOC-1750242254.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">San Marco Italian Restaurant</h1>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">San Marco Italian Restaurant offers authentic Italian cuisine with fresh ingredients, cozy ambiance, and exceptional service in a warm, inviting setting.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_Nekad-Papa-Web-NOC-1748932343.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Nekad Papa</h1>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">Nekad Papa Restaurant is a cozy eatery offering delicious local and international cuisine in a welcoming atmosphere.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_Kai-Jin-Sui-San-Web-NOC-1749969710.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Kai Jin Sui San (Concourse Alam Sutera)</h1>
+                    <p class="text-[14px] lg:text-[16px]"><span class="star">⭐⭐⭐⭐⭐</span>5.0 (1 Reviews)</p>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">Kai Jin Sui San offers authentic Japanese cuisine in Alam Sutera, featuring fresh local seafood.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_TANTA-Resto-Lounge-Web-NOC-1749619168.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">TANTA Resto & Lounge (Plaza Senayan)</h1>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">Tanta Restaurant & Lounge, located on Level 2 of SOGO Plaza Senayan, offers a premium fusion of Indonesian and Western cuisine in a warm, elegant atmosphere.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_Ishigamaya-CP-Web-NOC-1749120317.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Ishigamaya Hamburg (Central Park)</h1>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">Ishigamaya Hamburg at Central Park serves Japanese Hamburg with 100% prime black Angus beef in a cozy, spacious setting.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_Ishigamaya-Hamburg-Summarecon-Mall-Serpong-Web-NOC-1748919274.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">Ishigamaya Hamburg (Summarecon Mall Serpong)</h1>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">In a warm and inviting space, Ishigamaya Hamburg at Summarecon Mall Serpong serves Japanese Hamburg made from 100% prime black Angus beef.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/05/s-412x304x80xw_NOC-1748257369.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">The J.J.A ( The St. Regis Jakarta)</h1>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">J.J.A at St. Regis Jakarta offers exquisite Asian-inspired cuisine in an elegant setting, blending luxury and authentic flavors for a memorable dining experience.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/05/s-412x304x80xw_Bel-%C3%89tage-St-Regis-Web-NOC-1748310183.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">The Bel Étage (St. Regis Jakarta)</h1>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">Bel Étage at St. Regis Jakarta offers an elegant all-day dining experience with a diverse menu of international and local cuisines in a sophisticated setting.</p>
+                </div>
+                <div class="item w-[224px] lg:w-[412px] h-[257px] lg:h-[438px] box-content mr-[24px] shrink-0">
+                    <img src="https://static.chope.co/uploads/2025/05/s-412x304x80xw_The-Drawing-Room-St.-Regis-Jakarta-Web-NOC-1748308317.jpg" alt="" class="min-w-[224px] h-[168px] rounded-sm object-cover lg:w-[412px] lg:h-[304px]">
+                    <h1 class="w-[224px] lg:w-auto h-auto font-bold pt-[8px] line-clamp-2 lg:line-clamp-none lg:text-[24px]">The Drawing Room ( The St. Regis Jakarta)</h1>
+                    <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] mt-[5px] truncate">The Drawing Room at St. Regis Jakarta offers elegant afternoon teas, crafted cocktails, and refined dining in a luxurious, sophisticated ambiance.</p>
+                </div>
+
+
+            </div>
+
+            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px] lg:hidden">
+                <h1 class="font-bold">See more</h1>
+            </div>
+            
+        </section>
+
+        <!-- Popular Guides -->
+        <section id="discover-container" class="pl-[24px] lg:pl-[80px] pt-[42px] min-h-[411.391px lg:min-h-[527.594px] m-[0px] box-content">
+            <h1 class="text-[#10024A] font-bold text-[24px] lg:text-[36px] mb-[4px]">Popular Guides</h1>
+            <div class="absolute right-[54px] hidden lg:block">
+                <span class="text-[24px]"><</span> 
+                <span class="text-[24px] ml-[10px]">></span>
+            </div>
+            <div class="flex gap-[7px]">
+                <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] pb-[20px]">Eat your way around the city, wherever you are</p>
+                <a href="###" class="text-[#4D4DD0] font-bold text-[16px] hidden lg:block">See More ></a>
+            </div>
+            <!-- item -->
+            <div class=" h-[281px] lg:h-auto flex overflow-x-scroll w-[100%]">
+                <div class="item w-[224px] min-h-[257px] lg:w-[412px] lg:h-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2023/08/s-412x308x80xw_1690855309_46277.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Around Indonesia Guide</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Your ultimate dining guide across Indonesia</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2022/06/s-412x308x80xw_1654659933_48357.png" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Steak Guide</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">The next time you’re craving some juicy, tender beef, head down to one of these restaurants to curb them</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2018/08/s-412x308x80xw_IMG_20180727_120408_jpg_1533826292.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Japanese Guide</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Your fix for sushi, sashimi, ramen, yakitori and more</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2021/02/s-412x308x80xw_1614400977_87993.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Buffet Guide</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px] line-clamp-2">Whether you're a born-and-bred, or an adopted member of the Indonesia family, buffets are a rite of passage in our foodie city!</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2020/06/s-412x308x80xw_1592813138_13355.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Al-fresco Dining Guide</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Try something different and dine in the fresh air today</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2021/02/s-412x308x80xw_1614400842_51201.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Brunch Guide</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Begin your weekend with a hearty brunch!</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2020/08/s-412x308x80xw_1596514063_62855.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Instagramable Restaurants</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Restaurants with great food and interiors, perfect for the 'Gram!</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2021/08/s-412x308x80xw_1630045433_11125.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">New on Chope</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Newly-listed restaurants you don't want to miss</p>
+                </div>
+                <div class="item w-[224px] h-[257px] lg:w-[412px] lg:w-[419px] mr-[24px] ">
+                    <img src="https://static.chope.co/uploads/2021/02/s-412x308x80xw_1614401231_25337.jpg" alt="" class="min-w-[224px] lg:min-w-[412px] h-[168px] lg:h-[308px] rounded-md object-cover cursor-pointer">
+                    <h1 class="w-auto h-auto font-bold pt-[8px] lg:text-[24px]">Hot Pot Guide</h1>
+                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px] lg:text-[16px]">Indulge in hot bubbling pots of goodness!</p>
                 </div>
                 
 
-
             </div>
 
-            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px]">
-                <h1 class=>See more</h1>
-            </div>
-            
-        </section>
-
-        <section id="New-on-container" class="ml-[24px] mt-[42px] h-[395.391px] bg-[#efefef]">
-            <h1 class="text-[#10024A] font-bold text-[24px] mb-[4px]">New on Chope</h1>
-            <p class="text-[12px] font-normal text-[#6c6f95] pb-[20px]">Newly-listed restaurants you don't want to miss</p>
-
-            <div class=" h-[265px] bg-white flex gap-[24px] overflow-scroll w-[100%]">
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_TANTA-Resto-Lounge-Web-NOC-1749619168.jpg" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">TANTA Resto & Lounge (Plaza Senayan)</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Tanta Restaurant & Lounge, located on Level </p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_Ishigamaya-CP-Web-NOC-1749120317.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Ishigamaya Hamburg (Central Park)</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2025/06/s-412x304x80xw_Ishigamaya-Hamburg-Summarecon-Mall-Serpong-Web-NOC-1748919274.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px] truncate">Ishigamaya Hamburg <br> (Summarecon Mall Serpong)</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2025/05/s-412x304x80xw_NOC-1748257369.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">The J.J.A ( The St. Regis Jakarta)</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2025/05/s-412x304x80xw_Bel-%C3%89tage-St-Regis-Web-NOC-1748310183.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">The Bel Étage (St. Regis Jakarta)</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Weekend-Brunch-1730689051.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Jakarta's Best Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2024/11/s-412x308x80xw_Web-Campaign-Tiles_Rewards-1730689103.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Jakarta's Best Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-
-
-            </div>
-
-            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px]">
-                <h1 class=>See more</h1>
+            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px] mr-[24px] lg:hidden">
+                <h1 class="font-bold">See more</h1>
             </div>
             
         </section>
 
-        <section id="Popular-container" class="ml-[24px] mt-[42px] h-[395.391px] bg-[#efefef]">
-            <h1 class="text-[#10024A] font-bold text-[24px] mb-[4px]">Popular Guides</h1>
-            <p class="text-[12px] font-normal text-[#6c6f95] pb-[20px]">Eat your way around the city, wherever you are</p>
+        <!-- Dine, Save & Reserve -->
+        <section class="pl-[24px] lg:pl-[80px] pt-[42px] min-h-[446.391px] lg:min-h-[505.594px] m-[0px] box-content">
+            <h1 class="text-[#10024A] font-bold text-[24px] lg:text-[36px] mb-[4px]">Dine, Save & Reserve</h1>
+            <div class="absolute right-[54px] hidden lg:block">
+                <span class="text-[24px]"><</span> 
+                <span class="text-[24px] ml-[10px]">></span>
+            </div>
+            <div class="flex gap-[7px]">
+                <p class="text-[12px] lg:text-[16px] font-normal text-[#6c6f95] pb-[20px]">Deals made easy</p>
+                <a href="###" class="text-[#4D4DD0] font-bold text-[16px] hidden lg:block">See More ></a>
+            </div>
 
-            <div class=" h-[265px] bg-white flex gap-[24px] overflow-scroll w-[100%]">
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2023/08/s-412x308x80xw_1690855309_46277.png" alt="" class="min-w-[224px] h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Around Indonesia Guide</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Your ultimate dining guide across Indonesia</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2022/06/s-412x308x80xw_1654659933_48357.png" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Steak Guide</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2018/08/s-412x308x80xw_IMG_20180727_120408_jpg_1533826292.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px] truncate">Japanese Guide</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Your fix for sushi, sashimi, ramen, yakitori and more</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2021/02/s-412x308x80xw_1614400977_87993.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Buffet Guide</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">The top 100 restaurants on Chope</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2020/06/s-412x308x80xw_1592813138_13355.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Al-fresco Dining Guide</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Try something different and dine in the fresh air today</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2021/02/s-412x308x80xw_1614400842_51201.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Brunch Guide</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Begin your weekend with a hearty brunch!</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2020/08/s-412x308x80xw_1596514063_62855.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Instagramable Restaurants</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Restaurants with great food and interiors, perfect for the 'Gram!</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2021/08/s-412x308x80xw_1630045433_11125.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">New on Chope</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Newly-listed restaurants you don't want to miss</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2021/02/s-412x308x80xw_1614401231_25337.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Hot Pot Guide</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Indulge in hot bubbling pots of goodness!</p>
-                </div>
-                <div class="item w-[224px] h-[257px]">
-                    <img src="https://static.chope.co/uploads/2020/08/s-412x308x80xw_1596513782_67918.jpg" alt="" class="min-w-[224px] min-h-[168px] rounded-md object-cover">
-                    <h1 class="w-auto h-auto font-bold pt-[8px]">Romantic Restaurants in Jakarta</h1>
-                    <p class="text-[12px] font-normal text-[#6c6f95] mt-[5px]">Perfect for date night with your loved one</p>
+            <div class="flex  gap-[24px] w-full overflow-auto ">
+
+                <div class=" h-[316px] bg-white w-[176px] lg:w-[303px] lg:h-[412px] shrink-0 ">
+                 <img src="https://static.chope.co/uploads/2024/03/s-303x227x80xw_1709268246_42576.jpg" alt="" class="w-full h-[132px] lg:h-[228px] rounded-md object-cover">
+                 <div class="px-[16px] pt-[16px] w-auto h-[168px] relative">
+                     <h1 class="font-bold text-[#0b102a] w-[70%] leading-[20px] mb-[7px] lg:mb-[15px] lg:text-[20px]">Ruth's Chris Steak House</h1>
+                     <p class="text-[#6c6f95] text-[12px] overflow-hidden truncate"><img src="img/location.png" alt="" class="w-[17px] h-[17px] inline mr-[3px]"> Kuningan</p>
+                     <div class="bg-[#f15623] w-[40px] h-[40px] lg:w-[64px] lg:h-[64px] rounded-full text-center text-[12px] lg:text-[24px] leading-[40px] absolute top-[-20px] lg:top-[-32px] right-[6px] lg:right-[16px] text-[#fff] font-bold lg:py-[10px]">
+                        -11 <span class="lg:text-[16px]">%</span>
+                    </div>
+
+                    <div>
+                        <p class="absolute bottom-[0px] leading-[20px] text-[20px] font-bold">Rp445.000 <span class="block lg:inline lg:pl-[8px] text-[#a7a9bf] line-through decoration-solid text-base ">Rp500.000</span>
+                        </p>
+                     </div>
+                 </div>
                 </div>
 
+                <div class=" h-[316px] bg-white w-[176px] lg:w-[303px] lg:h-[412px] shrink-0 ">
+                 <img src="https://static.chope.co/uploads/2020/01/s-303x227x80xw_1579588762_54214.jpg" alt="" class="w-full h-[132px] lg:h-[228px] rounded-md object-cover">
+                 <div class="px-[16px] pt-[16px] w-auto h-[168px] relative">
+                     <h1 class="font-bold text-[#0b102a] w-[70%] leading-[20px] mb-[7px] lg:mb-[15px] lg:text-[20px]">AMUZ Gourmet Restaurant</h1>
+                     <p class="text-[#6c6f95] text-[12px] overflow-hidden truncate"><img src="img/location.png" alt="" class="w-[17px] h-[17px] inline mr-[5px]">SCBD</p>
+                     <div class="bg-[#f15623] w-[40px] h-[40px] lg:w-[64px] lg:h-[64px] rounded-full text-center text-[12px] lg:text-[24px] leading-[40px] absolute top-[-20px] lg:top-[-32px] right-[6px] lg:right-[16px] text-[#fff] font-bold lg:py-[10px]">
+                        -12 <span class="lg:text-[16px]">%</span>
+                    </div>
+
+                    <div>
+                        <p class="absolute bottom-[0px] leading-[20px] text-[20px] font-bold">Rp440.000 <span class="block lg:inline lg:pl-[8px] text-[#a7a9bf] line-through decoration-solid text-base ">Rp500.000</span>
+                        </p>
+                     </div>
+                 </div>
+                </div>
+
+                <div class=" h-[316px] bg-white w-[176px] lg:w-[303px] lg:h-[412px] shrink-0 ">
+                 <img src="https://static.chope.co/uploads/2024/08/s-303x227x80xw_1724053310_89555.jpg" alt="" class="w-full h-[132px] lg:h-[228px] rounded-md object-cover">
+                 <div class="px-[16px] pt-[16px] w-auto h-[168px] relative">
+                     <h1 class="font-bold text-[#0b102a] w-[70%] leading-[20px] mb-[7px] lg:mb-[15px] lg:text-[20px]">Ruth's Chris Steak House</h1>
+                     <p class="text-[#6c6f95] text-[12px] overflow-hidden truncate"><img src="img/location.png" alt="" class="w-[17px] h-[17px] inline mr-[5px]">Kemang</p>
+                     <div class="bg-[#f15623] w-[40px] h-[40px] lg:w-[64px] lg:h-[64px] rounded-full text-center text-[12px] lg:text-[24px] leading-[40px] absolute top-[-20px] lg:top-[-32px] right-[6px] lg:right-[16px] text-[#fff] font-bold lg:py-[10px]">
+                        -16 <span class="lg:text-[16px]">%</span>
+                    </div>
+
+                    <div>
+                        <p class="absolute bottom-[0px] leading-[20px] text-[20px] font-bold">Rp169.000 <span class="block lg:inline lg:pl-[8px] text-[#a7a9bf] line-through decoration-solid text-base ">Rp200.000</span>
+                        </p>
+                     </div>
+                    </div>
+                </div>
+
+                
 
             </div>
 
-            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px]">
-                <h1 class=>See more</h1>
+            <div class="flex items-center justify-center min-w-[390px] min-h-[40px] border rounded-full mt-[12px] lg:hidden">
+                <h1 class="font-bold">See more</h1>
             </div>
-            
+
         </section>
 
-        <section class="ads-container w-[100%] min-h-[272px] mt-[62px] bg-[url(https://static.chope.co/static/mainwebsite5.0/images/desktop_app_pattern.png?date=20250611)] bg-cover ">
-            <div class="mx-auto w-fit">
-                <h1 class="pt-[28px] text-left w-fit font-bold text-[24px]">DINING MADE EASY</h1>
-                <P class="mt-[9px] text-left w-fit text-[12px] leading-[20px] text-[#6c6f95]">Download teh app for a better experience</P>
+        <!-- Dining made easy -->
+        <section class="ads-container w-[100%] h-[272px] mt-[62px] bg-[url(https://static.chope.co/static/mainwebsite5.0/images/desktop_app_pattern.png?date=20250611)] bg-cover ">
+            <div class="mx-auto my-[0px] w-[288px] lg:w-[1280px] h-[316px] lg:h-[200px] lg:pl-[218px]">
+                <h1 class="pt-[28px] lg:pt-[44px] text-left w-fit font-bold text-[24px] lg:text-[36px]">DINING MADE EASY</h1>
+                <P class="mt-[9px] lg:mt-[28px] text-left w-fit text-[12px] lg:text-[16px] leading-[20px] text-[#6c6f95]">Download teh app for a better experience</P>
+                <div class="relative flex gap-[20px]">
+                    <div class="lg:flex mt-[28px]">
+                        <img src="https://static.chope.co/static/mainwebsite5.0/img/Desktop_AppStore.png?date=20250611" alt="" class="w-[96px] lg:w-[132px] lg:h-[40px] h-[28px] mr-[16px] ">
+                        <img src="https://static.chope.co/static/mainwebsite5.0/img/Desktop_PlayStore.png?date=20250611" alt="" class="w-[96px] lg:w-[132px]        lg:h-[40px] h-[28px] mt-[16px] lg:mt-[0px] mr-[16px] ">
+                    </div>
+                
+                    <img src="https://static.chope.co/static/mainwebsite5.0/images/desktop_iphone.png?date=20250611" alt="" class="w-[104px] lg:w-[216px] lg:h-[351.688px] h-[160px] object-contain absolute right-[0px] lg:right-[256px] top-[20px] lg:top-[-162px] ">
+                </div>
+            </div>        
+        </section>
+
+        <!-- take your restaurant to the next level -->
+        <section class="mt-[45px] w-[100%] h-[375px] bg-cover bg-[url(https://static.chope.co/static/mainwebsite5.0/img/Mobile_ChopeCloud_Banner.jpg)] bg-no-repeat lg:hidden"></section>
+        <section class="mt-[60px] w-[100%] h-[384px] bg-cover bg-[url(https://static.chope.co/static/mainwebsite5.0/img/Desktop_ChopeCloud_Banner.png)] bg-no-repeat hidden lg:block"></section>
+
+
+        <!-- Our Patner Section -->
+        <section class="w-[100%] h-[264.594px] mt-[32px]  ">
+            <h1 class="text-center lg:text-[36px] mb-[13px] font-bold">Our Partners</h1>
+
+            <div class="pb-[78px] overflow-scroll">
+                    
+                <div class="flex gap-[14px] w-[100%] pl-[14px] lg:justify-center">
+                    <img src="https://static.chope.co/static/partner_id/Tripadvisor-Logo-700x394-1.png?date=20250616073558" alt="" class="w-[100px] h-[78px]    object-contain">
+                    <img src="https://static.chope.co/static/partner_id/google_logo.png?date=20250616073558" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://d2jzxcrnybzkkt.cloudfront.net/uploads/2017/11/Screen_Shot_2017_11_10_at_11_1_1510283601.png?date=20250616073558" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://d2jzxcrnybzkkt.cloudfront.net/uploads/2018/04/Ctrip_logo_h_default_lg_png_1524029785.png?date=20250616073558" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://d2jzxcrnybzkkt.cloudfront.net/uploads/2018/04/Traveloka_Primary_Logo_png_1524108209.png?date=20250616073558" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://static.chope.co/uploads/2020/02/whats_new_indonesia__0_5x__png_1580962020.png?date=20250617" alt="" class="w-[100px] h-[78px]     object-contain">
+                    <img src="https://d2jzxcrnybzkkt.cloudfront.net/uploads/2018/01/Table_Tales_Jakart_png_1516605070.png?date=20250617" alt="" class="w-[100px] h-[78px] object-contain shrink-0">
+                    <img src="https://static.chope.co/static/partner_id/NOWJAKARTA-BLACK-ca0acf382d401f6433175b27e660cc00694da2c138d817e34aa80cf24793571d.png?  date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://d2jzxcrnybzkkt.cloudfront.net/uploads/2016/11/Logo_JKTGO_png_1478580009.png?date=20250617" alt="" class="w-[100px] h-[78px]   object-contain shrink-0">
+                    <img src="https://static.chope.co/uploads/2019/12/manualsm_jpg_1576840892.jpg?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                    
+                    <img src="https://static.chope.co/uploads/2019/08/pricecut_id_logo_jpg_1564733164.jpg?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://static.chope.co/uploads/2019/04/logo_loveindo_800_jpg_1556185231.jpg?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://static.chope.co/static/partner_id/download-2-1.png?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                </div>
+
+                <div class="flex gap-[14px] w-[100%] pl-[14px] lg:justify-center">
+                    <img src="https://static.chope.co/static/partner_id/GarudaMiles-logo_700x350-scaled.png?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://static.chope.co/static/partner_id/Partnership-JKBL-Resize-logo-grab-copy-1.png?date=20250617" alt="" class="w-[100px] h-[78px]    object-contain">
+                    <img src="https://static.chope.co/static/partner_id/MAP-GVMAP-Web-logo-1.png?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://static.chope.co/static/partner_id/tokopedia-apa-itu-startup-pengertian-cara-memulai-dan-1.png?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://static.chope.co/static/partner_id/Gojek_logo_2019.png?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                    <img src="https://static.chope.co/static/partner_id/cinema-xxi.png?date=20250617" alt="" class="w-[100px] h-[78px] object-contain">
+                </div>
+
             </div>
-            
+
+        </section>
+
+        <!-- About Chope -->
+        <section class="p-[20px]">
+            <h2 class="font-bold py-[15px] pr-[15px] text-[20px] bg-[#F9F9F9]">About Chope</h2>
+
+            <p class="pb-[10px] text-[#10024a] text-[14px]">Chope is dining made easy. Our leading dining platform connects diners to restaurants for memorable experiences, more often.
+            <br>
+            <br>
+            Having seated more than 100 million diners, Chope understands what gets people excited about dining out, and how best to maximise business for over 9,000 restaurant partners. With Chope, diners can discover restaurants, make bookings, save with deals, and order pick-up and delivery on the app. Chope’s demand generating diner platform is seamlessly incorporated with a suite of integrated restaurant solutions that encompass reservation, call, queue, and table management.
+            <br>
+            <br>
+            Founded in 2011 and currently operating in three countries (Singapore, Thailand, and Indonesia), Chope has grown consistently over the past 14 years. Powering this growth are Chope’s close relationships with top restaurant partners, including Commonwealth Concepts, The Lo & Behold Group, Tung Lok Group and Plataran Group. Chope’s ecosystem is further enriched by key partnerships with companies such as Alipay, Google, TripAdvisor, Meituan Dianping, Grab, and CapitaLand.</p>
+            <br>
+            <br>
+            <a href="#" class="text-[#286fdc] mt-[10px]">Read more</a>
         </section>
 
     </main>
 
     <footer>
+        <!-- Footer 1 -->
+        <div class="container-footer-1 bg-[#10024A] pb-[12px] ">
+            <ul class="lg:flex lg:mx-[302.500px] lg:px-[20px] lg:pb-[30px] gap-[180px]">
+                <li class="list-none">
+                    <p class="px-[16px] mt-[12px] text-[14px] font-semibold leading-[48px] text-[#FFCF01]">For Diners</p>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">Reservations</a>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">Terms & Conditions</a>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">Deals</a>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">FAQ</a>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">Rewards</a>
+                </li>
+                <li class="list-none">
+                    <p class="px-[16px] mt-[12px] text-[14px] font-semibold leading-[48px] text-[#FFCF01] ">For Restaurants</p>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">Chope For Restaurants</a>
+                </li>
+                <li class="list-none">
+                    <p class="px-[16px] mt-[12px] text-[14px] font-semibold leading-[48px] text-[#FFCF01] ">More</p>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">About Chope</a>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">Contact Us</a>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">Careers</a>
+                    <a href="#" class="block pl-[40px] lg:pl-[15px] leading-[23px] mb-[15px] text-[#F7F8FA] text-[14px]">Press</a>
+                </li>
+                <li class="list-none">
+                    <p class="px-[16px] mt-[12px] text-[14px] font-semibold leading-[48px] text-[#FFCF01] ">Download our App</p>
+                    <a href="#" class="block pl-[40px] leading-[23px] mb-[15px] ">
+                        <img src="https://static.chope.co/static/mainwebsite5.0/images/ios-footer.svg?date=20250617" alt="" class="h-[47px]">
+                    </a>
+                    <a href="#" class="block pl-[40px] leading-[23px] mb-[15px] ">
+                        <img src="https://static.chope.co/static/mainwebsite5.0/images/android-footer.svg?date=20250617" alt="" class="h-[47px] max-w-[140px]">
+                    </a>
+                    <a href="#" class="block pl-[40px] leading-[23px] mb-[15px]">
+                        <img src="https://static.chope.co/static/mainwebsite5.0/images/huawei-footer-dark.svg?date=20250617" alt="" class="h-[47px] max-w-[140px]">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Footer 2 -->
+        <div class="container-footer-2 bg-[#0B0134] mt-[-1px] pb-[24px]">
+            
+            <div class="px-[16px] pt-[24px] lg:mx-[302.500px]">
+
+                <div class="lg:hidden">
+                    <div>
+                        <span class="text-white text-[14px]">Follow Us</span>
+                        <a href=""><img src="https://static.chope.co/static/mainwebsite5.0/img/Facebook-White.png?date=20250617" alt="" class="inline max-w-[15px] max-h-[15px] ml-[16px]"></a>
+                        <a href=""><img src="https://static.chope.co/static/mainwebsite5.0/img/Instagram-White.png?date=20250617" alt="" class="inline max-w-[15px] max-h-[15px] ml-[16px]"></a>
+                        <a href=""><img src="https://static.chope.co/static/mainwebsite5.0/img/LinkedIn-White.png?date=20250617" alt="" class="inline max-w-[15px] max-h-[15px] ml-[16px]"></a>
+                        <a href=""><img src="https://static.chope.co/static/mainwebsite5.0/img/Tiktok.svg?date=20250617" alt="" class="inline max-w-[15px] max-h-[15px] ml-[16px]"></a>
+                    </div>
+
+                    <div class="text-white text-[14px] pt-[16px]">
+                        &copy; 2025 <img src="https://static.chope.co/static/mainwebsite5.0/img/Chope_Short_Logo_White.png?date=20250617" alt="" class="max-h-[75px] inline"> All Rights Reserved
+                    </div>
+                </div>
+
+                <div class="hidden lg:block">
+                    <div class="lg:flex gap-[10px] ">
+                        <div class="text-white text-[14px] pt-[16px]">
+                            &copy; 2025 <img src="https://static.chope.co/static/mainwebsite5.0/img/Chope_Short_Logo_White.png?date=20250617" alt="" class="max-h-[75px] inline"> All Rights Reserved
+                        </div>
+
+                        <span class="text-white text-[14px] flex items-center pt-[10px]">Follow Us</span>
+                        <a href="" class="mt-[35px]"><img src="https://static.chope.co/static/mainwebsite5.0/img/Facebook-White.png?date=20250617" alt="" class="inline max-w-[15px] max-h-[15px] ml-[16px]"></a>
+                        <a href="" class="mt-[35px]"><img src="https://static.chope.co/static/mainwebsite5.0/img/Instagram-White.png?date=20250617" alt="" class="inline max-w-[15px] max-h-[15px] ml-[16px]"></a>
+                        <a href="" class="mt-[35px]"><img src="https://static.chope.co/static/mainwebsite5.0/img/LinkedIn-White.png?date=20250617" alt="" class="inline max-w-[15px] max-h-[15px] ml-[16px]"></a>
+                        <a href="" class="mt-[35px]"><img src="https://static.chope.co/static/mainwebsite5.0/img/Tiktok.svg?date=20250617" alt="" class="inline max-w-[15px] max-h-[15px] ml-[16px]"></a>
+                    </div>
+
+                </div>
+                
+
+                <div class="text-white text-[11px]">
+                    <p class="pb-[8px]">Chope Customer Support Contact</p>
+                    <span>For Chope Customer Support please fill in <a href="###" class="text-[#1565C0]">Contact Form</a> or email support.id@chope.co.</span>
+                </div>
+
+                <br>
+
+                <div class="text-white text-[11px]">
+                    <p class="pb-[8px]">Service Contact Information for Consumer Complaints</p>
+                    <span class="block">Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga, Kementerian Perdagangan, Republik Indonesia</span>
+                    <span>Whatsapp Ditjen PKTN: 0853-1111-1010</span>
+                </div>
+
+            </div>
+
+        </div>
+
 
     </footer>
 </body>
